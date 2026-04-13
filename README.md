@@ -43,8 +43,7 @@ Grover's is a quantum search algorithm that solves this in O(√N) steps — a q
 - Search space: 2 qubits → 4 possible states (|00>, |01>, |10>, |11>)
 - Target state: |11>
 - Oracle: CZ gate (flips phase of |11> only)
-- Iterations: 1 (optimal for N=4, since floor((π/4)·√4) = 1)
-
+- Iterations: 1 
 ### Result
 Before running the algorithm, all 4 states have equal probability of 25%. After just 1 iteration of Oracle + Diffuser, the target state |11> comes up ~100% of the time and all other states drop to ~0%. This confirms that amplitude amplification successfully found the marked state.
 
